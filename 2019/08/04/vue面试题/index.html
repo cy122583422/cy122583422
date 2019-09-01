@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>Vue面试题 | 学习笔记</title>
+  <meta name="keywords" content=" Vue面试题 ">
+  <meta name="description" content="Vue面试题 | 学习笔记">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="123 vue 笔记。。o.toString(); http://www.42du.cn/ 好网站&amp;#125;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="vue笔记">
+<meta property="og:url" content="http://yoursite.com/vue笔记/index.html">
+<meta property="og:site_name" content="学习笔记">
+<meta property="og:description" content="123 vue 笔记。。o.toString(); http://www.42du.cn/ 好网站&amp;#125;">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-10T09:34:22.343Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue笔记">
+<meta name="twitter:description" content="123 vue 笔记。。o.toString(); http://www.42du.cn/ 好网站&amp;#125;">
+
+
+<link rel="icon" href="/img/profileYuan.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="//cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.0.1"></script>
+
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value>
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/profileYuan.jpg" />
+</a>
+<div class="author">
+    <span>Chen Yuan</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/cy122583422" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="facebook" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:1782217284@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(9)</small></div></li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    </div>
+    <div><a style="border-right: 1px solid #fff; width: 49%"  class="about site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="9">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode==13){return false;}">
+        <input class="search" type="text" placeholder="搜索文章" autocomplete="off"id="local-search-input" >
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">vue笔记</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color4">hexo踩坑笔记</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color2">Vue面试题</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a href="javascript:" class="color1">JS好方法</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2019/08/04/assets和statics目录的区别/"
+           data-tag="vue笔记"
+           data-author="" >
+            <span class="post-title" title="assets和statics目录的区别">assets和statics目录的区别</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/09/01/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-09-01 20:10:28">2019/09/01</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/hexo切换主题失败/"
+           data-tag="hexo踩坑笔记"
+           data-author="" >
+            <span class="post-title" title="hexo切换主题失败">hexo切换主题失败</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/vue面试题/"
+           data-tag="Vue面试题"
+           data-author="" >
+            <span class="post-title" title="Vue面试题">Vue面试题</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/js深拷贝/"
+           data-tag="JS好方法"
+           data-author="" >
+            <span class="post-title" title="js深拷贝">js深拷贝</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/判断2个对象是否相等/"
+           data-tag="JS好方法"
+           data-author="" >
+            <span class="post-title" title="判断2个对象是否相等">判断2个对象是否相等</span>
+            <span class="post-date" title="2019-08-04 18:43:59">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/对象转字符串方法/"
+           data-tag="JS好方法"
+           data-author="" >
+            <span class="post-title" title="对象转字符串方法">对象转字符串方法</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/对象继承最好的方法/"
+           data-tag="JS好方法"
+           data-author="" >
+            <span class="post-title" title="对象继承最好的2个方法">对象继承最好的2个方法</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+        <a  class=""
+           href="/2019/08/04/数组排序时效/"
+           data-tag="JS好方法"
+           data-author="" >
+            <span class="post-title" title="数组排序时效研究">数组排序时效研究</span>
+            <span class="post-date" title="2019-08-04 17:34:36">2019/08/04</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        <article id="post-vue面试题" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Vue面试题</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            
+            <a href="javascript:" class="color2">Vue面试题</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2019-08-11 01:08:42'>2019-08-04 17:34</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.bslxx.com/a/mianshiti/tiku/javascript/2018/1211/2174.html" target="_blank" rel="noopener">http://www.bslxx.com/a/mianshiti/tiku/javascript/2018/1211/2174.html</a><br><a href="https://ddduanlian.github.io/2018/06/22/http_note/" target="_blank" rel="noopener">https://ddduanlian.github.io/2018/06/22/http_note/</a><br><a href="http://www.bslxx.com/" target="_blank" rel="noopener">http://www.bslxx.com/</a></p>
+<p>第1题<br>Vue.filter既可以注册也可以获取全局过滤器；(正确)<br>VUe.use如果插件是一个对象，必须提供install方法；(正确)<br>Vue.set 设置对象的属性；(正确)<br>Vue.directive只可以注册全局指令。(错误)</p>
+<p>第2题<br>关于axios的常用方法，说法错误的是：<br>axios.get(url[,config]) // get请求用于列表和信息查询 (正确)<br>axios.delete(url[,config]) // 用于删除 (正确)<br>axios.post(url[,data[,config]]) // post请求用于信息的添加 (正确)<br>axios.put(url[,data[,config]]) // 增加操作 (错误)<br>注解：<br>POST</p>
+<p>用于提交请求，可以更新或者创建资源，是非幂等的</p>
+<p>举个例子，在我们的支付系统中，一个api的功能是创建收款金额二维码，它和金额相关，每个用户可以有多个二维码，如果连续调用则会创建新的二维码，这个时候就用POST</p>
+<p>PUT</p>
+<p>用于向指定的URI传送更新资源，是幂等的</p>
+<p>还是那个例子，用户的账户二维码只和用户关联，而且是一一对应的关系，此时这个api就可以用PUT，因为每次调用它，都将刷新用户账户二维码</p>
+<p>比如一个接口用于用户生成，接收的数据是用户名、密码等相关信息，则用POST</p>
+<hr>
+<p>另外1： delete和get的配置相似，delete的场景<br>axios.delete(‘<a href="http://localhost:3000/todos/&#39;" target="_blank" rel="noopener">http://localhost:3000/todos/&#39;</a> + id).then(function (res) {<br>         console.log(res);<br>     }).catch(function (err) {<br>          console.log(err)<br>     })</p>
+<p>场景描述<br>删除table里面的某一行数据</p>
+<p>代码解释<br>先删除前端数据显示</p>
+<p>axios.delete（后台提供要删除的数据的URL）</p>
+<p>.then(后台删除成功，在页面显示弹窗，重新成功请求到后台数据res)</p>
+<hr>
+<p>另外2：  patch方法用来更新局部资源，这句话我们该如何理解？</p>
+<p>假设我们有一个UserInfo，里面有userId， userName， userGender等10个字段。可你的编辑功能因为需求，在某个特别的页面里只能修改userName，这时候的更新怎么做？</p>
+<p>人们通常(为徒省事)把一个包含了修改后userName的完整userInfo对象传给后端，做完整更新。但仔细想想，这种做法感觉有点二，而且真心浪费带宽(纯技术上讲，你不关心带宽那是你土豪)。</p>
+<p>于是patch诞生，只传一个userName到指定资源去，表示该请求是一个局部更新，后端仅更新接收到的字段。</p>
+<p>而put虽然也是更新资源，但要求前端提供的一定是一个完整的资源对象，理论上说，如果你用了put，但却没有提供完整的UserInfo，那么缺了的那些字段应该被清空PATCH 与 PUT 属性上的一个重要区别还在于：PUT 是幂等的，而 PATCH 不是幂等的。<br>幂等是一个数学和计算机学概念，在计算机范畴内表示一个操作执行任意次对系统的影响跟一次是相同。</p>
+<p>在HTTP/1.1规范中幂等性的定义是:</p>
+<p>第3题<br>以下关于vue为什么不直接操作dom说法错误的是？<br>A 因为操作dom后，会触发一些浏览器行为，比如layout和paint （正确）<br>B paint是一个耗时的过程，然而layout是一个更耗时的过程 （正确）<br>C layout会牵涉到整个文档布局的重新计算 （正确）<br>D 浏览器layout不会去更新dom,任何对dom的修改都不会被暂存到队列中（错误）</p>
+<p>第4题<br>1、axios的特点有哪些？<br>答： （以下全是正确）<br>一、Axios 是一个基于 promise 的 HTTP 库，支持promise所有的API （注意！！！是所有api）<br>二、它可以拦截请求和响应<br>三、它可以转换请求数据和响应数据，并对响应回来的内容自动转换成 JSON类型的数据<br>四、安全性更高，客户端支持防御 XSRF</p>
+<p>第5题<br>说下你了解的axios相关配置属性？<br>答：<br><code>url</code>是用于请求的服务器URL</p>
+<p><code>method</code>是创建请求时使用的方法,默认是get</p>
+<p><code>baseURL</code>将自动加在<code>url</code>前面，除非<code>url</code>是一个绝对URL。它可以通过设置一个<code>baseURL</code>便于为axios实例的方法传递相对URL</p>
+<p><code>transformRequest</code>允许在向服务器发送前，修改请求数据，只能用在’PUT’,’POST’和’PATCH’这几个请求方法</p>
+<p><code>headers</code>是即将被发送的自定义请求头<br>headers:{‘X-Requested-With’:’XMLHttpRequest’},</p>
+<p><code>params</code>是即将与请求一起发送的URL参数，必须是一个无格式对象(plainobject)或URLSearchParams对象<br>params:{<br>ID:12345<br>},</p>
+<p><code>auth</code>表示应该使用HTTP基础验证，并提供凭据<br>这将设置一个<code>Authorization</code>头，覆写掉现有的任意使用<code>headers</code>设置的自定义<code>Authorization</code>头<br>auth:{<br>username:’janedoe’,<br>password:’s00pers3cret’<br>},</p>
+<p>‘proxy’定义代理服务器的主机名称和端口<br><code>auth</code>表示HTTP基础验证应当用于连接代理，并提供凭据<br>这将会设置一个<code>Proxy-Authorization</code>头，覆写掉已有的通过使用<code>header</code>设置的自定义<code>Proxy-Authorization</code>头。<br>proxy:{<br>host:’127.0.0.1’,<br>port:9000,<br>auth::{<br>username:’mikeymike’,<br>password:’rapunz3l’<br>}<br>},</p>
+<p>6）下面有关浏览器中使用JavaScript跨域获取数据的描述，说法错误的是：<br>A、域名、端口相同，协议不同，属于相同的域；（错误）<br>B、js 可以使用JSONP进行跨域（正确）（缺点，只能get方法跨域，安全性不高；不能解决不同域的两个页面之间如何进行JavaScript调用的问题；相比CORS，jsonp不能返回状态码，不能更好处理错误）<br>C、通过修改document.domain来跨子域（正确）（缺点： 主域必须要相同，只能跨二级子域）<br>D、使用window.name来进行跨域（正确）  (缺点： 影响页面性能)</p>
+<p>postMessage跨域方法：允许跨窗口通信，不论这两个窗口是否同源。H5新的API， 但IE6,7不兼容<br><a href="https://www.cnblogs.com/rainman/archive/2011/02/21/1960044.html" target="_blank" rel="noopener">https://www.cnblogs.com/rainman/archive/2011/02/21/1960044.html</a><br>跨域demo : <a href="https://github.com/FatDong1/cross-domain" target="_blank" rel="noopener">https://github.com/FatDong1/cross-domain</a></p>
+<p>7） 关于JavaScript系统方法的描述，错误的是：<br>A、parseFloat方法：将一个字符串转换成对应的小数；（正确）<br>B、isNaN方法： 用于检测参数是否为数值型，如果是，返回true，否则，返回false；（错误！！！！！说反了！！！）<br>C、escape方法：返回对一个字符串编码后的结果字符串（正确）<br>D、eval方法：将某个参数字符串作为一个JavaScript执行（正确）</p>
+<p>8）  call和apply都属于function.prototype 的一个方法，所以每个function实例都有call, apply属性 （正确）<br>Call传入参数列表；apply是参数数组</p>
+<p>9）关于css sprites， 说法错误的是？  （有关雪碧图的理解， 查看此链接以及他的demo: <a href="http://ons.me/125.html）" target="_blank" rel="noopener">http://ons.me/125.html）</a><br>A、允许你将一个页面涉及的所有零星图片都包含到一张大图中去<br>B、利用css的‘background-image’， ‘background-repeat，‘background-position’的组合进行背景定位<br>C、Css sprites 虽然增加了总的图片的字节，但是很好地减少了网页的http请求，从而大大的提高页面性能<br>D、Css sprites整理起来更为方便，同一个按钮不同状态的图片，也不需要一个个切割出来并个别命名</p>
+<p>10）页面性能优化 （不得不提的前端性能优化 <a href="https://www.cnblogs.com/sherlock-Ace/p/9920702.html" target="_blank" rel="noopener">https://www.cnblogs.com/sherlock-Ace/p/9920702.html</a> ） ， <a href="https://www.imooc.com/article/49244" target="_blank" rel="noopener">https://www.imooc.com/article/49244</a> ， <a href="https://www.cnblogs.com/xiaohuochai/p/9178390.html" target="_blank" rel="noopener">https://www.cnblogs.com/xiaohuochai/p/9178390.html</a><br>10.1 减少资源大小可以加快网页显示速度，所以要对HTML、CSS、JavaScript等进行代码压缩，并在服务器端设置GZip<br>10.2 用CSS开启硬件加速来提高网站性能 <a href="https://blog.csdn.net/qq_41805715/article/details/89357352" target="_blank" rel="noopener">https://blog.csdn.net/qq_41805715/article/details/89357352</a></p>
+<p>11） require.js 口诀<br>请记住使用requirejs的口诀，两函数一配置一属性  <a href="https://www.jb51.net/article/119496.htm，" target="_blank" rel="noopener">https://www.jb51.net/article/119496.htm，</a> 阮一峰 <a href="http://www.ruanyifeng.com/blog/2012/11/require_js.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2012/11/require_js.html</a></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论 </span>
+    </div>
+</article>
+
+
+<p>
+    <a href="javascript:void(0)" class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>Vue面试题</p>
+    
+    <p><span class="copy-title">本文作者:</span><a href="javascript:void(0)" title="Chen Yuan">Chen Yuan</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-08-04, 17:34:36</p>
+    <p><span class="copy-title">最后更新:</span>2019-08-11, 01:08:42</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/04/vue面试题/" title="Vue面试题">http://yoursite.com/2019/08/04/vue面试题/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" href="javascript:void(0)"></a>
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/profileYuan.jpg" class="alipay" title="扫码支持">
+            <!-- <img src="/img/weixin1652.jpg" class="weixin" title="扫码支持"> -->
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <!-- <span><label><input type="radio" name="pay" value="alipay">支付宝</label></span> -->
+        <span><label><input type="radio" name="pay" checked value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="//cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#vue笔记','#hexo踩坑笔记','#Vue面试题','#JS好方法',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
